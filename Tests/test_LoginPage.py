@@ -1,5 +1,3 @@
-import time
-
 import pytest
 
 from Config.config import TestData
@@ -13,9 +11,10 @@ class Test_LoginPage(Test_Base):
 
         "username, password",
         [
-            ("standard_user", "secret_sauce"),
-            ("problem_user", "secret_sauce"),
-            ("performance_glitch_user", "secret_sauce"),
+            (TestData.firstUserName, TestData.password),
+            (TestData.secondUserName, TestData.password),
+            (TestData.thirdUserName, TestData.password),
+            (TestData.fourthUserName, TestData.password),
         ]
     )
     def test_login(self, username, password):
@@ -23,4 +22,3 @@ class Test_LoginPage(Test_Base):
         self.loginPage.login_steps(username, password)
         actualTitle = self.loginPage.get_home_page_title()
         assert actualTitle == TestData.homePageTitle
-        time.sleep(5)
