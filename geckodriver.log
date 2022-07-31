@@ -1,0 +1,20 @@
+1659259243702	geckodriver	INFO	Listening on 127.0.0.1:50913
+1659259243993	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50914" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/dh/wscv6ss56zdd0bxq6r5f5dd80000gq/T/rust_mozprofileHSw7XE"
+2022-07-31 14:20:44.497 plugin-container[7657:75967] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-31 14:20:44.497 plugin-container[7657:75967] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1659259244505	Marionette	INFO	Marionette enabled
+2022-07-31 14:20:44.514 plugin-container[7657:75967] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-31 14:20:44.514 plugin-container[7657:75967] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-07-31 14:20:44.514 plugin-container[7657:75974] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-07-31 14:20:44.514 plugin-container[7657:75974] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1659259244542	Marionette	INFO	Listening on port 50928
+WebDriver BiDi listening on ws://localhost:50914
+Read port: 50928
+1659259244835	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/dh/wscv6ss56zdd0bxq6r5f5dd80000gq/T/rust_mozprofileHSw7XE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50914/devtools/browser/aca382f3-18ae-497d-9aac-fc58bda44c63
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:337:29
+
+1659259312225	Marionette	INFO	Stopped listening on port 50928
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

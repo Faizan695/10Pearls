@@ -1,0 +1,22 @@
+Instructions to setting up and running tests
+
+Please follow these following instructions for Project Setup
+
+1. Go to this github link
+2. Clone the project repo via https into your local machine.
+3. Open the open in any IDE. e.g. Pycharm or VS Code.
+
+Please follow these following instructions for Test Cases Execution
+
+1. please check python is installed in your machine
+     TO check please open project folder in terminal and execute this command:
+         python --version or python3 --version
+2. To run the tests please execute this command:
+      pytest Tests/test_LoginPage.py
+3. If you want to generate the html report then please execute this command:
+      pytest Tests/test_LoginPage.py -v --html=./results.html
+4. To test cases in parallel mode then please execute this commands:
+      pytest Tests/test_LoginPage.py -v -n 3 --html=./results.html
+
+
+
